@@ -2,84 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https:fanweixian.github.io/post/</link>
+    <link>https://fanweixian.github.io/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2019 10:14:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 10:22:42 +0800</lastBuildDate>
     
-	<atom:link href="https:fanweixian.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fanweixian.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>777</title>
-      <link>https:fanweixian.github.io/post/777/</link>
-      <pubDate>Mon, 13 May 2019 10:14:52 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/777/</guid>
-      <description>77777</description>
-    </item>
     
     <item>
-      <title>6</title>
-      <link>https:fanweixian.github.io/post/6/</link>
-      <pubDate>Sat, 11 May 2019 09:47:01 +0800</pubDate>
+      <title>Hugo创建个人GitHub博客</title>
+      <link>https://fanweixian.github.io/post/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BAgithub%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 13 May 2018 10:22:42 +0800</pubDate>
       
-      <guid>https:fanweixian.github.io/post/6/</guid>
-      <description>ddd6666</description>
-    </item>
-    
-    <item>
-      <title>5</title>
-      <link>https:fanweixian.github.io/post/5/</link>
-      <pubDate>Fri, 10 May 2019 23:09:52 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/5/</guid>
-      <description> 5555 </description>
-    </item>
-    
-    <item>
-      <title>四</title>
-      <link>https:fanweixian.github.io/post/%E5%9B%9B/</link>
-      <pubDate>Fri, 10 May 2019 23:09:52 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/%E5%9B%9B/</guid>
-      <description> si4444 </description>
-    </item>
-    
-    <item>
-      <title>第三</title>
-      <link>https:fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</link>
-      <pubDate>Fri, 10 May 2019 22:59:37 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</guid>
-      <description>title: &amp;ldquo;san33333&amp;rdquo; date: 2019-05-10T22:18:52+08:00
-draft: true 一.标题相关333 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
-这是倾斜的文字
-这是斜体加粗的文字</description>
-    </item>
-    
-    <item>
-      <title>第二dddddddd</title>
-      <link>https:fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
-      <pubDate>Fri, 10 May 2019 22:58:58 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
-      <description>title: &amp;ldquo;Blog&amp;rdquo; date: 2019-05-10T22:18:52+08:00
-draft: true 一.标dier # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
-这是倾斜的文字
-这是斜体加粗的文字</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https:fanweixian.github.io/post/blog/</link>
-      <pubDate>Fri, 10 May 2019 22:18:52 +0800</pubDate>
-      
-      <guid>https:fanweixian.github.io/post/blog/</guid>
-      <description>一.标题相关 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
-这是倾斜的文字
-这是斜体加粗的文字</description>
+      <guid>https://fanweixian.github.io/post/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BAgithub%E5%8D%9A%E5%AE%A2/</guid>
+      <description>1.安装hugo（windows 请查看官网介绍 https://gohugo.io/getting-started/installing/） $ brew install hugo  $ hugo version  2.创建hugo 项目 $ hugo new site myblog  3.添加主题 这里我使用m10c，可以自己选择其他
+$ cd myblog $ git init $ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  4.添加内容（content目录下执行） $ hugo new post/hugo创建个人GitHub博客.md  之后编辑编辑：hugo创建个人GitHub博客.md
+5.本地运行调试 $ hugo //编译 $ hugo server -D  本地打开http://localhost:1313/调试
+6.Theme的设定 打开config.toml
+baseURL = &amp;quot;http://fanweixian.github.io/&amp;quot; //这baseURL是部署后的访问地址。 languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot; theme = &amp;quot;m10c&amp;quot; // 你使用的theme 名称  查看下载主题的地址，还有其他的设置</description>
     </item>
     
   </channel>
