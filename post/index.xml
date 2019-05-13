@@ -2,48 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://fanweixian.github.io/post/</link>
+    <link>http://fanweixian.github.io/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 May 2019 09:47:01 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 10:14:52 +0800</lastBuildDate>
     
-	<atom:link href="https://fanweixian.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://fanweixian.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>777</title>
+      <link>http://fanweixian.github.io/post/777/</link>
+      <pubDate>Mon, 13 May 2019 10:14:52 +0800</pubDate>
+      
+      <guid>http://fanweixian.github.io/post/777/</guid>
+      <description>77777</description>
+    </item>
+    
+    <item>
       <title>6</title>
-      <link>https://fanweixian.github.io/post/6/</link>
+      <link>http://fanweixian.github.io/post/6/</link>
       <pubDate>Sat, 11 May 2019 09:47:01 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/6/</guid>
+      <guid>http://fanweixian.github.io/post/6/</guid>
       <description>ddd6666</description>
     </item>
     
     <item>
       <title>5</title>
-      <link>https://fanweixian.github.io/post/5/</link>
+      <link>http://fanweixian.github.io/post/5/</link>
       <pubDate>Fri, 10 May 2019 23:09:52 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/5/</guid>
+      <guid>http://fanweixian.github.io/post/5/</guid>
       <description> 5555 </description>
     </item>
     
     <item>
       <title>四</title>
-      <link>https://fanweixian.github.io/post/%E5%9B%9B/</link>
+      <link>http://fanweixian.github.io/post/%E5%9B%9B/</link>
       <pubDate>Fri, 10 May 2019 23:09:52 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/%E5%9B%9B/</guid>
+      <guid>http://fanweixian.github.io/post/%E5%9B%9B/</guid>
       <description> si4444 </description>
     </item>
     
     <item>
       <title>第三</title>
-      <link>https://fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</link>
+      <link>http://fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</link>
       <pubDate>Fri, 10 May 2019 22:59:37 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</guid>
+      <guid>http://fanweixian.github.io/post/%E7%AC%AC%E4%B8%89/</guid>
       <description>title: &amp;ldquo;san33333&amp;rdquo; date: 2019-05-10T22:18:52+08:00
 draft: true 一.标题相关333 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
 这是倾斜的文字
@@ -52,10 +61,10 @@ draft: true 一.标题相关333 # 这是一级标题 ## 这是二级标题 ### �
     
     <item>
       <title>第二dddddddd</title>
-      <link>https://fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
+      <link>http://fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
       <pubDate>Fri, 10 May 2019 22:58:58 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
+      <guid>http://fanweixian.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
       <description>title: &amp;ldquo;Blog&amp;rdquo; date: 2019-05-10T22:18:52+08:00
 draft: true 一.标dier # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
 这是倾斜的文字
@@ -64,10 +73,10 @@ draft: true 一.标dier # 这是一级标题 ## 这是二级标题 ### 这是三
     
     <item>
       <title>Blog</title>
-      <link>https://fanweixian.github.io/post/blog/</link>
+      <link>http://fanweixian.github.io/post/blog/</link>
       <pubDate>Fri, 10 May 2019 22:18:52 +0800</pubDate>
       
-      <guid>https://fanweixian.github.io/post/blog/</guid>
+      <guid>http://fanweixian.github.io/post/blog/</guid>
       <description>一.标题相关 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题  二.字体 **这是加粗的文字 ** 方法
 这是倾斜的文字
 这是斜体加粗的文字</description>
