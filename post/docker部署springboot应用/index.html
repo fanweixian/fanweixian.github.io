@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Docker部署Springboot应用 // 个人博客</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://fanweixian.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker部署Springboot应用"/>
+<meta name="twitter:description" content="docker安装 根据自己的平台安装docker，此步骤省略。
+编写Dockerfile创建自定义镜像 FROM centos:latest #这是要基于该镜像来构建自定义镜像 MAINTAINER fan #这是创建人的名字 RUN yum install -y java #原始的centos中没有Java环境，要先安装环境，-y的作用是安装过程中一直yes	RUN java -version #检查下Java环境安装好了没有，这一步可以不写 RUN mkdir /home/halo #创建自定义目录 copy halo-1.0.0.jar /home/halo #把jar包复制到镜像中，注意，jar包的目录是基于Dockerfile的位置，所以我直接把jar包放在Dockerfile同一个目录 WORKDIR /home/halo #进入自定义目录，相当于cd ENTRYPOINT java -jar halo-1.0.0.jar #当run镜像后执行的命令，这里我是启动jar包 EXPOSE 8090	#暴露的端口  这次使用的项目是halo，一个开源的博客系统，build成jar包的过程省略。 构建docker镜像的命令
+docker build -t fan/halo:v1 .  Successfully built e3d8f94a8701 Successfully tagged fan/halo:v1  看到这些后就说明构建成功了。
+MacBook-Pro:static_web a10.12$ docker images REPOSITORY TAG IMAGE ID CREATED SIZE fan/halo v1 e3d8f94a8701 37 minutes ago 552MB  查看下是否有刚刚构建的镜像"/>
+
+    <meta property="og:title" content="Docker部署Springboot应用" />
+<meta property="og:description" content="docker安装 根据自己的平台安装docker，此步骤省略。
+编写Dockerfile创建自定义镜像 FROM centos:latest #这是要基于该镜像来构建自定义镜像 MAINTAINER fan #这是创建人的名字 RUN yum install -y java #原始的centos中没有Java环境，要先安装环境，-y的作用是安装过程中一直yes	RUN java -version #检查下Java环境安装好了没有，这一步可以不写 RUN mkdir /home/halo #创建自定义目录 copy halo-1.0.0.jar /home/halo #把jar包复制到镜像中，注意，jar包的目录是基于Dockerfile的位置，所以我直接把jar包放在Dockerfile同一个目录 WORKDIR /home/halo #进入自定义目录，相当于cd ENTRYPOINT java -jar halo-1.0.0.jar #当run镜像后执行的命令，这里我是启动jar包 EXPOSE 8090	#暴露的端口  这次使用的项目是halo，一个开源的博客系统，build成jar包的过程省略。 构建docker镜像的命令
+docker build -t fan/halo:v1 .  Successfully built e3d8f94a8701 Successfully tagged fan/halo:v1  看到这些后就说明构建成功了。
+MacBook-Pro:static_web a10.12$ docker images REPOSITORY TAG IMAGE ID CREATED SIZE fan/halo v1 e3d8f94a8701 37 minutes ago 552MB  查看下是否有刚刚构建的镜像" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fanweixian.github.io/post/docker%E9%83%A8%E7%BD%B2springboot%E5%BA%94%E7%94%A8/" />
+<meta property="article:published_time" content="2018-06-03T15:21:09&#43;08:00"/>
+<meta property="article:modified_time" content="2018-06-03T15:21:09&#43;08:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://fanweixian.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>个人博客</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Docker部署Springboot应用</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jun 3, 2018
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h3 id="docker安装">docker安装</h3>
+
+<p>根据自己的平台安装docker，此步骤省略。</p>
+
+<h3 id="编写dockerfile创建自定义镜像">编写Dockerfile创建自定义镜像</h3>
+
+<pre><code>FROM  centos:latest 	#这是要基于该镜像来构建自定义镜像
+MAINTAINER fan  		#这是创建人的名字
+RUN yum install -y java #原始的centos中没有Java环境，要先安装环境，-y的作用是安装过程中一直yes	
+RUN java -version 		#检查下Java环境安装好了没有，这一步可以不写
+RUN mkdir  /home/halo 	#创建自定义目录
+copy halo-1.0.0.jar /home/halo  #把jar包复制到镜像中，注意，jar包的目录是基于Dockerfile的位置，所以我直接把jar包放在Dockerfile同一个目录
+WORKDIR /home/halo  #进入自定义目录，相当于cd
+ENTRYPOINT java -jar halo-1.0.0.jar  #当run镜像后执行的命令，这里我是启动jar包
+EXPOSE 8090			#暴露的端口
+</code></pre>
+
+<p>这次使用的项目是halo，一个开源的博客系统，build成jar包的过程省略。
+构建docker镜像的命令</p>
+
+<pre><code>docker build -t fan/halo:v1 .
+</code></pre>
+
+<pre><code>Successfully built e3d8f94a8701
+Successfully tagged fan/halo:v1
+</code></pre>
+
+<p>看到这些后就说明构建成功了。</p>
+
+<pre><code>MacBook-Pro:static_web a10.12$ docker images
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+fan/halo               v1                  e3d8f94a8701        37 minutes ago      552MB
+</code></pre>
+
+<p>查看下是否有刚刚构建的镜像</p>
+
+<h3 id="运行docker镜像">运行docker镜像</h3>
+
+<pre><code>docker run -d -p 8090:8090 --name halo e3d8f94a8701
+</code></pre>
+
+<p>-d : 后台运行<br />
+-p : 绑定端口<br />
+&ndash;name : 帮容器起个名字</p>
+
+<pre><code>MacBook-Pro:static_web a10.12$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
+92e7c002855f        a498b7c07b97        &quot;/bin/sh -c 'java -j…&quot;   About an hour ago   Up 6 seconds        0.0.0.0:8090-&gt;8090/tcp              halo
+</code></pre>
+
+<p>查看正在运行的容器</p>
+
+<pre><code>docker logs -f 
+</code></pre>
+
+<p>查看应用日志。
+-f ：实时数据</p>
+
+<p>访问<a href="http://127.0.0.1:8090">http://127.0.0.1:8090</a>就可以啦</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
